@@ -3,20 +3,165 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
-    <link rel="logo" href="img/logo.png" type="image/png" />
+    <title>99syukhi - Jo-Melly's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&amp;family=Playfair+Display:ital,wght@1,500;1,600&amp;family=Poppins:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" type="image/png" href="img/logo.png">
     <link rel="stylesheet" href="css/main.css" />
   </head>
 
   <body>
-    <header class="header container">
-      <a class="header-logo" href="index.html">
-        <img src="img/logo.png" alt="Logo" />
-      </a>
-      <nav class="nav-items">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="work.html">Work</a>
-        <a href="contact.html">Contact</a>
-      </nav>
+    <header class="site-header">
+      <div class="logo">
+        <a href="index.html">
+        <img src="img/logo.png" alt="99syukhi Logo" href="index.html">
+        </a>
+      </div>
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="work.html" class="nav-link">Work</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
     </header>
+
+    <main>
+    <section class="hero" id="home">
+        <div class="hero-card">
+            <div class="hero-text">
+                <p class="eyebrow">Hi, I'm</p>
+                <h1 class="hero-name">Jo-Melly</h1>
+                <p class="hero-bio">
+                A software engineer student at the University of Applied Sciences, who is fascinated by anything tech-related. 
+                I try my best to spend my free time building on a portfolio, but I have so many unfinished projects. Hopefully one day they get to be completed.
+            <div class="hero-img">
+                <img src="img/chibi.png" alt="Chibi Illustration of Jo-Melly">
+            </div>
+            <div class="social-pill">
+            <span>Find me on</span>
+
+            <a href="https://www.linkedin.com/in/jo-melly-amatbahrowi-447380358/" target="_blank" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+
+            <a href="https://github.com/99syukhi" target="_blank" aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
+            </a>
+        </div>
+    </section>
+
+    <section id="roles" class="roles">
+        <p class="eyebrow center">✦ currently ✦</p>
+        <h2 class="section-title">What I'm Up To</h2>
+        <div class="role-card">
+            <div class="role-icon">
+                <i class="fa-solid fa-graduation-cap">
+                </i>
+            </div>
+            <div class="role-content">
+                <span class="role-tag">Education</span>
+                <h3 class="role-title">Student</h3>
+                <p class="role-org">UNASAT</p>
+                <p class="role-desc">Currently working towards my Bachelor Degree of ICT and building my skills in IT.</p>
+            </div>
+        </div>
+        <div class="role-card">
+            <div class="role-icon">
+                <i class="fa-solid fa-briefcase">
+                </i>
+            </div>
+            <div class="role-content">
+                <span class="role-tag">Work</span>
+                <h3 class="role-title">Administrative Assistant</h3>
+                <p class="role-org">Maxro Trading & Services N.V.</p>
+                <p class="role-desc">Supporting daily operations in the logistics and handeling administrative task to make my manager's work lighter. Aside from that I also am tasked with making/creating advertisement pictures etc...</p>
+            </div>
+        </div>
+    </section>
+    <section id="work" class="projects">
+      <p class="eyebrow center">✦ portfolio ✦</p>
+      <h2 class="section-title">Recent Projects</h2>
+
+      <article class="project-card">
+        <div class="project-thumb">
+          <img src="https://placehold.co/600x360/151833/ff2a93?text=Project+One" alt="Screenshot of Project One">
+        </div>
+        <div class="project-body">
+          <h3 class="project-title">SnapBloom</h3>
+          <p class="project-desc">
+            SnapBloom is a web photobooth that I am working on. Some of us love to take pictures and I don't know about you, but there's this thing
+            about photobooth pictures that make me feel some type of way. My idea is to turn this into a working photobooth where I may choose my own photobooth strip and eventually decorate my photobooth strip however I want.
+          </p>
+          <div class="tag-list">
+            <span class="tag">.</span>
+            <span class="tag">.</span>
+            <span class="tag">.</span>
+          </div>
+          <a href="#" class="text-link">View project <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-thumb">
+          <img src="https://placehold.co/600x360/151833/ff2a93?text=Project+Two" alt="Screenshot of Project Two">
+        </div>
+        <div class="project-body">
+          <h3 class="project-title">Personal Portfolio</h3>
+          <p class="project-desc">
+            For a class assignment I am supposed to build a web portfolio, which is the on you are on right now.
+            In this web portfolio you will learn more about me.
+          </p>
+          <div class="tag-list">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">Javascript</span>
+          </div>
+          <a href="index.html" class="text-link">View project <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-thumb">
+          <img src="https://placehold.co/600x360/151833/ff2a93?text=Project+Three" alt="Screenshot of Project Three">
+        </div>
+        <div class="project-body">
+          <h3 class="project-title">Webshop Maxro</h3>
+          <p class="project-desc">
+            As a way of learning I decided to try and create a webshop for Maxro Trading & Services N.V. Taking inspiration from other Suriname-based webshops.
+            Same as my previous projects this also isn't finished yet. It's still in the making.
+          </p>
+          <div class="tag-list">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">Javascript</span>
+          </div>
+          <a href="#" class="text-link">View project <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+    </section>
+    
+    <section id="skills" class="skills">
+      <p class="eyebrow center">✦ toolkit ✦</p>
+      <h2 class="section-title">Skills</h2>
+
+      <div class="skills-grid">
+        <div class="skill-pill"><i class="fa-brands fa-html5"></i><span>HTML</span></div>
+        <div class="skill-pill"><i class="fa-brands fa-css3-alt"></i><span>CSS</span></div>
+        <div class="skill-pill"><i class="fa-brands fa-js"></i><span>JavaScript</span></div>
+        <div class="skill-pill"><i class="fa-brands fa-git-alt"></i><span>Git</span></div>
+        <div class="skill-pill"><i class="fa-brands fa-github-alt"></i><span>Github</span></div>
+        <div class="skill-pill"><i class="fa-solid fa-file-excel"></i><span>Microsoft Office</span></div>
+      </div>
+    </section>
+    </main>
+
+<footer>
+    <p class="footer-copy">
+    &copy; 2026 99syukhi. All rights reserved.
+    </p>
+</footer>
+
+  <script src="/js/script.js"></script>
+  </body>
+</html>

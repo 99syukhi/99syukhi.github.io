@@ -8,7 +8,7 @@
 
 My personal portfolio website, built with HTML, CSS, and JavaScript, and hosted using GitHub Pages.
 
-**Live Website:** https://99syukki.github.io
+**Live Website:** https://99syukhi.github.io
 
 ## About
 

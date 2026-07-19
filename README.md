@@ -72,7 +72,7 @@ The website is designed with a modern, responsive interface featuring a dark the
 Clone the repository:
 
 ```bash
-git clone https://github.com/99syukki/99syukki.github.io.git
+git clone https://github.com/99syukhi/99syukhi.github.io.git
 ```
 
 Open the project folder:

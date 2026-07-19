@@ -10,6 +10,41 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   };
 
+  document.documentElement.style.scrollBehavior = 'smooth';
+
+  document.querySelectorAll('a[href^="#"]').forEach((link) => {
+    const href = link.getAttribute('href');
+
+    if (!href || href === '#') return;
+
+    link.addEventListener('click', (event) => {
+      const targetId = href.slice(1);
+      const target = document.getElementById(targetId);
+
+      if (!target) return;
+
+      event.preventDefault();
+      target.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    });
+  });
+
+  if (window.location.hash) {
+    const targetId = window.location.hash.slice(1);
+    const target = document.getElementById(targetId);
+
+    if (target) {
+      setTimeout(() => {
+        target.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }, 100);
+    }
+  }
+
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
@@ -18,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       });
     },
-    { rootMargin: '-40% 0px -55% 0px' } 
+    { rootMargin: '-40% 0px -55% 0px' }
   );
 
   sections.forEach((section) => {
@@ -52,10 +87,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
 
-// ==========================================================
-// work.js — filter buttons for the work/projects page
-// ==========================================================
-
 document.addEventListener('DOMContentLoaded', () => {
 
   const filterBtns = document.querySelectorAll('.filter-btn');
@@ -65,7 +96,6 @@ document.addEventListener('DOMContentLoaded', () => {
   filterBtns.forEach((btn) => {
     btn.addEventListener('click', () => {
 
-      // Update active button
       filterBtns.forEach((b) => b.classList.remove('active'));
       btn.classList.add('active');
 
@@ -79,9 +109,9 @@ document.addEventListener('DOMContentLoaded', () => {
         if (match) visible++;
       });
 
-      // Show/hide the empty state message
       noResults.hidden = visible > 0;
     });
   });
 
 });
+

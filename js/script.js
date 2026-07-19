@@ -51,3 +51,37 @@ document.addEventListener('DOMContentLoaded', () => {
   revealTargets.forEach((el) => revealObserver.observe(el));
 
 });
+
+// ==========================================================
+// work.js — filter buttons for the work/projects page
+// ==========================================================
+
+document.addEventListener('DOMContentLoaded', () => {
+
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const workCards  = document.querySelectorAll('.work-card');
+  const noResults  = document.getElementById('noResults');
+
+  filterBtns.forEach((btn) => {
+    btn.addEventListener('click', () => {
+
+      // Update active button
+      filterBtns.forEach((b) => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      const filter = btn.dataset.filter;
+
+      let visible = 0;
+
+      workCards.forEach((card) => {
+        const match = filter === 'all' || card.dataset.status === filter;
+        card.classList.toggle('hidden', !match);
+        if (match) visible++;
+      });
+
+      // Show/hide the empty state message
+      noResults.hidden = visible > 0;
+    });
+  });
+
+});

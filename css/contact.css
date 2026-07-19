@@ -1,0 +1,172 @@
+.contact-intro {
+  text-align: center;
+  padding: 0 20px;
+  margin-bottom: 40px;
+}
+
+.contact-sub {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  max-width: 360px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+.socials-section {
+  padding: 0 20px;
+  margin-bottom: var(--section-gap);
+}
+
+.socials-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.social-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-pink);
+  border-radius: var(--radius-md);
+  padding: 16px 18px;
+  text-decoration: none;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.social-card:hover {
+  background: var(--bg-card-alt);
+  transform: translateY(-2px);
+}
+
+.social-icon-wrap {
+  flex-shrink: 0;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+  color: #fff;
+}
+
+.social-icon-wrap.linkedin  { background: #0a66c2; }
+.social-icon-wrap.github    { background: #333; }
+.social-icon-wrap.instagram { background: linear-gradient(135deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
+.social-icon-wrap.facebook  { background: #1877f2; }
+.social-icon-wrap.email     { background: var(--pink); }
+
+.social-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.social-platform {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-light);
+}
+
+.social-handle {
+  font-size: 0.72rem;
+  color: var(--text-faint);
+}
+
+.social-arrow {
+  font-size: 13px;
+  color: var(--text-faint);
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.social-card:hover .social-arrow {
+  color: var(--pink);
+  transform: translateX(4px);
+}
+
+.cv-section {
+  padding: 0 20px;
+  margin-bottom: var(--section-gap);
+}
+
+.cv-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  background: var(--bg-card);
+  border: 1.5px solid var(--border-pink);
+  border-radius: var(--radius-lg);
+  padding: 32px 24px;
+  max-width: 480px;
+  margin: 0 auto;
+  box-shadow: 0 0 40px rgba(255, 42, 147, 0.08);
+}
+
+.cv-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: rgba(255, 42, 147, 0.12);
+  color: var(--pink);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+}
+
+.cv-text h2 {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 22px;
+  color: var(--text-light);
+  margin-bottom: 6px;
+}
+
+.cv-text p {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+.cv-buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cv-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 22px;
+  border-radius: var(--radius-pill);
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.cv-btn:hover {
+  opacity: 0.85;
+  transform: translateY(-2px);
+}
+
+.cv-btn--view {
+  color: var(--pink);
+  border: 1.5px solid var(--pink);
+  background: transparent;
+}
+
+.cv-btn--download {
+  color: #fff;
+  background: var(--pink);
+  border: 1.5px solid var(--pink);
+}

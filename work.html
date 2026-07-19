@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Work — 99syukhi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display:ital,wght@1,500;1,600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/work.css" />
+    <link rel="stylesheet" href="css//responsive.css" />
+  </head>
+
+  <body>
+
+    <header class="site-header">
+      <div class="logo">
+        <a href="index.html">
+          <img src="img/logo.png" alt="99syukhi Logo">
+        </a>
+      </div>
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="work.html" class="nav-link active">Work</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+
+      <section class="work-intro">
+        <p class="eyebrow center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"/>
+          </svg>
+          my work
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"/>
+          </svg>
+        </p>
+        <h1 class="section-title">Projects &amp; Works</h1>
+        <p class="work-sub">
+          A collection of things I've built, am building, or had to put on hold for now.
+          Honest disclaimer — most of them are still a work in progress!
+        </p>
+      </section>
+
+      <section class="filter-section">
+        <div class="filter-bar">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="in-progress">In Progress</button>
+          <button class="filter-btn" data-filter="completed">Completed</button>
+          <button class="filter-btn" data-filter="paused">Paused</button>
+        </div>
+      </section>
+
+      <section class="work-section">
+        <div class="work-grid" id="workGrid">
+
+          <article class="work-card" data-status="in-progress">
+            <div class="work-thumb">
+              <img src="/img/projects/SnapBloom Logo.png" alt="SnapBloom project thumbnail">
+              <span class="status-badge status-badge--in-progress">
+                <i class="fa-solid fa-circle-half-stroke"></i> In Progress
+              </span>
+            </div>
+            <div class="work-body">
+              <h2 class="work-title">SnapBloom</h2>
+              <p class="work-desc">
+                A web photobooth app.
+              </p>
+              <div class="tag-list">
+                <span class="tag">React</span>
+                <span class="tag">Next.js</span>
+                <span class="tag">CSS</span>
+              </div>
+              <div class="work-links">
+                <a href="/snapbloom.html" class="text-link">
+                  View project <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <a href="https://github.com/99syukhi/snapbloom" class="work-icon-link" aria-label="GitHub repository" target="_blank">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="work-card" data-status="completed">
+            <div class="work-thumb">
+              <img src="/img/logo.png" alt="Personal Portfolio project thumbnail">
+              <span class="status-badge status-badge--completed">
+                <i class="fa-solid fa-circle-check"></i> completed
+              </span>
+            </div>
+            <div class="work-body">
+              <h2 class="work-title">Personal Portfolio</h2>
+              <p class="work-desc">
+                The very site you're on right now! Built as a class assignment, 
+                it's also become a personal creative project to showcase who I am and what I do.
+              </p>
+              <div class="tag-list">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+              </div>
+              <div class="work-links">
+                <a href="portfolio.html" class="text-link">
+                  View project <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <a href="https://github.com/99syukhi/99syukhi.github.io" class="work-icon-link" aria-label="GitHub repository" target="_blank">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="work-card" data-status="paused">
+            <div class="work-thumb">
+              <img src="/img/projects/webshop.png" alt="Webshop Maxro project thumbnail">
+              <span class="status-badge status-badge--paused">
+                <i class="fa-solid fa-pause"></i> paused
+              </span>
+            </div>
+            <div class="work-body">
+              <h2 class="work-title">Webshop Maxro</h2>
+              <p class="work-desc">
+                A webshop concept for Maxro Trading &amp; Services N.V., taking inspiration 
+                from other Suriname-based e-commerce sites. Still in the making.
+              </p>
+              <div class="tag-list">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+              </div>
+              <div class="work-links">
+                <a href="#" class="text-link">
+                  View project <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <div class="no-results" id="noResults" hidden>
+            <i class="fa-solid fa-folder-open"></i>
+            <p>No projects with this status yet.</p>
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="index.html">home</a></li>
+          <li><a href="about.html">about</a></li>
+          <li><a href="work.html">work</a></li>
+          <li><a href="contact.html">contact</a></li>
+        </ul>
+      </nav>
+      <p class="footer-cta">Let's connect</p>
+      <div class="social-icons footer-icons">
+        <a href="https://www.linkedin.com/in/jo-melly-amatbahrowi-447380358/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://github.com/99syukhy" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="mailto:jomellyamatbahrowi@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+      <hr class="footer-divider" />
+      <p class="footer-copy">&copy; 2026 99syukhi. All rights reserved.</p>
+    </footer>
+
+    <script src="/js/script.js"></script>
+  </body>
+</html>

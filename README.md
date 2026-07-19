@@ -39,14 +39,30 @@ The website is designed with a modern, responsive interface featuring a dark the
 99syukki.github.io/
 │
 ├── css/
+|   └── about.css
+|   └── contact.css
 │   └── main.css
-│
+|   └── project.css
+|   └── responsive.css
+|   └── work.css
+|
+├── img/
+|   └────────────── projects/
+|   └── chibi.png
+|   └── jomelly.png
+|   └── logo.png
+|
 ├── js/
 │   └── script.js
 │
-├── img/
-│
+├── about.html
+├── contact.html
+├── cv.pdf
 ├── index.html
+├── portfolio.html
+├── snapbloom.html
+├── webshop.html
+├── work.html
 ├── README.md
 └── LICENSE
 ```
@@ -62,7 +78,7 @@ git clone https://github.com/99syukki/99syukki.github.io.git
 Open the project folder:
 
 ```bash
-cd 99syukki.github.io
+cd 99syukhi.github.io
 ```
 
 Then simply open `index.html` in your browser or use a local development server such as the VS Code **Live Server** extension.

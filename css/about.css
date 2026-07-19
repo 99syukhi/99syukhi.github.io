@@ -29,13 +29,13 @@
 }
 
 .about-card p{
-    font-size:0.75rem;
+    font-size:12px;
     color:var(--text-muted);
     margin-bottom:2px;
 }
 
 .story-card p{
-font-size:0.75rem;
+font-size:12px;
 line-height:1.8;
 }
 
@@ -67,7 +67,7 @@ line-height:1.8;
 }
 
 .timeline-item p{
-    font-size:0.75rem;
+    font-size:12px;
 }
 
 .interest-grid{
